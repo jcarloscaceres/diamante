@@ -1,0 +1,40 @@
+html, body{
+    background-color: #eeeeee;
+    font-family: Arial, sans-serif;
+    color: #ee4630;
+}
+
+h1{
+    display: inline-block;
+    font-size: 60px;
+}
+
+container{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+.diamante{
+    display: inline-block;
+    border-style: solid;
+    border-color: transparent transparent red transparent;
+    border-width: 0px 25px 25px 25px;
+    height: 0;
+    width: 50px;
+    position: relative;
+    margin: 20px 0 50px 0;
+}
+
+.diamante::after{
+    content: "";
+    position: absolute;
+    top:25px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: red transparent transparent transparent;
+    border-width: 70px 50px 0px 50px;
+
+}
